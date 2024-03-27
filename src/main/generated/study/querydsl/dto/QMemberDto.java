@@ -17,5 +17,9 @@ public class QMemberDto extends ConstructorExpression<MemberDto> {
         super(MemberDto.class, new Class<?>[]{String.class, int.class}, username, age);
     }
 
+    public QMemberDto(com.querydsl.core.types.Expression<String> username) {
+        super(MemberDto.class, new Class<?>[]{String.class}, username);
+    }
+
 }
 
