@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: local
+    active: test
   h2:
     console:
       enabled: true
@@ -11,15 +11,15 @@ spring:
     password: 1
 
   jpa:
-#    open-in-view: true
+    #    open-in-view: true
     hibernate:
       ddl-auto: create
     properties:
       hibernate:
-#        show_sql: true
+        #        show_sql: true
         format_sql: true
         default_batch_fetch_size: 100
-#    defer-datasource-initialization: true
+  #    defer-datasource-initialization: true
 
   logging:
     level:
